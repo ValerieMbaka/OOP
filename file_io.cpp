@@ -12,15 +12,13 @@ class FileIO {
                         string inputText;
                         cout << "Type a  sentence: \n";
                         // cin >> inputText;
-                        getline(cin, inputText);
+                        getline(cin, inputText); // Use getline for multi-word input
                         myfile << inputText << "\n";
                         myfile.close();
 
-                        // Reading from the file
-                        ifstream mytext("Textfile.txt");
                         // mytext >> inputText;
-                        getline(mytext, inputText);
-                        mytext.close();
+                        // getline(mytext, inputText);
+                        // mytext.close();
                         // if (mytext.is_open()) {
                         //         string text = getline();
                         // }
@@ -28,10 +26,54 @@ class FileIO {
                         // mytext.close();
 
                 };
+
+                // Method to read from the file
+                void readFile() {
+                        ifstream myfile("Textfile.txt"); // Open file for reading
+                        if (!myfile.is_open()) { // Check if the file is open
+                                cerr << "Error: Unable to open file for reading!" << endl;
+                                return;
+                        }
+
+                        string line;
+                        cout << "\nContents of the file:\n";
+                        while (getline(myfile, line)) {
+                                cout << line << endl; // Print each line
+                        }
+                        myfile.close(); // Close the file
+                };
+
+                // Method to clear the file contents with a confirmation prompt
+                void clearFile() {
+                        char confirm;
+                        cout << "Are you sure you want to clear the file contents? (y/n): ";
+                        cin >> confirm;
+
+                        // Check if user confirmed with 'y' or 'Y'
+                        if (confirm == 'y' || confirm == 'Y') {
+                                ofstream myfile("Textfile.txt", ios::trunc); // Open file in trunc mode to clear contents
+                                if (!myfile.is_open()) {
+                                        cerr << "Error: Unable to open file for clearing!" << endl;
+                                        return;
+                                }
+                                cout << "File contents have been cleared.\n";
+                                myfile.close(); // Close the file
+                        } else {
+                                cout << "File contents were not cleared.\n";
+                        }
+                };
 };
 
 int main() {
         FileIO file;
+        // Call the readFile method to display file content
+        file.readFile();
 
+        // Ask user for confirmation to clear the file contents
+        file.clearFile();
+
+        // Confirm the file is empty after the operation
+        cout << "\nAfter clearing the file:\n";
+        file.readFile();
         return 0;
 }
