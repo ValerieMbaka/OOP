@@ -31,15 +31,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ace8737-32c1-4c7a-bb8a-ece78d602859" name="Changes" comment="polymorphism">
+    <list default="true" id="1ace8737-32c1-4c7a-bb8a-ece78d602859" name="Changes" comment="file I/O">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/oop.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/oop.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file_io.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/file_io.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +153,7 @@
       <workItem from="1733900775448" duration="4815000" />
       <workItem from="1736319985336" duration="7936000" />
       <workItem from="1736409743185" duration="1208000" />
-      <workItem from="1736412850063" duration="747000" />
+      <workItem from="1736412850063" duration="1345000" />
     </task>
     <task id="LOCAL-00001" summary="Added classes program">
       <option name="closed" value="true" />
@@ -186,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736409909807</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="file I/O">
+      <option name="closed" value="true" />
+      <created>1736413905726</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736413905726</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +202,8 @@
     <MESSAGE value="Added classes program" />
     <MESSAGE value="Added control structures and functions" />
     <MESSAGE value="polymorphism" />
-    <option name="LAST_COMMIT_MESSAGE" value="polymorphism" />
+    <MESSAGE value="file I/O" />
+    <option name="LAST_COMMIT_MESSAGE" value="file I/O" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

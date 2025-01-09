@@ -29,18 +29,19 @@ class FileIO {
 
                 // Method to read from the file
                 void readFile() {
-                        ifstream myfile("Textfile.txt"); // Open file for reading
-                        if (!myfile.is_open()) { // Check if the file is open
+                        ifstream mytext("Textfile.txt"); // Open file for reading
+                        if (!mytext.is_open()) { // Check if the file is open
+                                // Use cerr to output an error message
                                 cerr << "Error: Unable to open file for reading!" << endl;
                                 return;
                         }
 
-                        string line;
+                        string text;
                         cout << "\nContents of the file:\n";
-                        while (getline(myfile, line)) {
-                                cout << line << endl; // Print each line
+                        while (getline(mytext, text)) {
+                                cout << text << endl; // Print each line
                         }
-                        myfile.close(); // Close the file
+                        mytext.close(); // Close the file
                 };
 
                 // Method to clear the file contents with a confirmation prompt
