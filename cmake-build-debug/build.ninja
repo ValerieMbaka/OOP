@@ -49,8 +49,8 @@ cmake_ninja_workdir = C$:/Users/user/CLionProjects/oop/cmake-build-debug/
 
 build cmake_object_order_depends_target_oop: phony || .
 
-build CMakeFiles/oop.dir/file_io.cpp.obj: CXX_COMPILER__oop_unscanned_Debug C$:/Users/user/CLionProjects/oop/file_io.cpp || cmake_object_order_depends_target_oop
-  DEP_FILE = CMakeFiles\oop.dir\file_io.cpp.obj.d
+build CMakeFiles/oop.dir/test.cpp.obj: CXX_COMPILER__oop_unscanned_Debug C$:/Users/user/CLionProjects/oop/test.cpp || cmake_object_order_depends_target_oop
+  DEP_FILE = CMakeFiles\oop.dir\test.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\oop.dir
   OBJECT_FILE_DIR = CMakeFiles\oop.dir
@@ -63,7 +63,7 @@ build CMakeFiles/oop.dir/file_io.cpp.obj: CXX_COMPILER__oop_unscanned_Debug C$:/
 #############################################
 # Link the executable oop.exe
 
-build oop.exe: CXX_EXECUTABLE_LINKER__oop_Debug CMakeFiles/oop.dir/file_io.cpp.obj
+build oop.exe: CXX_EXECUTABLE_LINKER__oop_Debug CMakeFiles/oop.dir/test.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\oop.dir

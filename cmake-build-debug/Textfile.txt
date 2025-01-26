@@ -1,2 +1,4 @@
 C++ file I/O is working
 Hello
+C++ file I/O is working
+Hello world

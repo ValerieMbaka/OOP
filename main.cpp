@@ -46,7 +46,15 @@ void withdraw()
         cin >> answer;
         if(answer == "yes" || answer == "YES")
         {
-            withdraw();
+          int newnewBalance;
+          cout << "Enter the amount you wish to withdraw: \n";
+          cin >> amount;
+          if(amount < newBalance)
+            {
+            newnewBalance = newBalance - amount;
+            cout << "Your new total account balance is: " << newnewBalance << "\n";
+            }
+//            withdraw();
         }
 
     }

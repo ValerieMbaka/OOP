@@ -52,7 +52,7 @@ int main()
         cout << " Failed \n";
     }
 
-    string name;
+
     char grade;
     cout << "Enter your name: "<< endl;
     cin >> name;
@@ -123,6 +123,7 @@ int main()
     cout << "End of Exercise 3\n";
 
     int x, y;
+    cout << "Enter a number: \n";
     cin >> x;
     for (x = 1; x <= 5; x++)
     {
@@ -144,7 +145,7 @@ int main()
 
     for (x = 1; x <= 5; x++)
     {
-        for (int y = 1; y <= x; y++)
+        for (y = 1; y <= x; y++)
         {
             cout << x << "";
         }
